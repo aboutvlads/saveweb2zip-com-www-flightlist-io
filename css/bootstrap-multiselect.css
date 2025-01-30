@@ -1,0 +1,136 @@
+span.multiselect-native-select {
+    position: relative;
+    width: 100%;
+}
+
+span.multiselect-native-select select {
+    border: 0!important;
+    clip: rect(0 0 0 0)!important;
+    height: 1px!important;
+    margin: -1px -1px -1px -3px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
+    left: 50%;
+    top: 30px
+}
+
+.multiselect-container {
+    font-size: .875rem;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 10px;
+    min-width: 100%;
+    width: 100%;
+}
+
+.multiselect-container .input-group {
+    margin: 5px
+}
+
+.multiselect-container .multiselect-reset .input-group {
+    width: 93%
+}
+
+.multiselect-container>li {
+    padding: 0
+}
+
+.multiselect-container>li>a.multiselect-all label {
+    font-weight: 700
+}
+
+.multiselect-container>li.multiselect-group label {
+    margin: 0;
+    padding: 3px 20px;
+    height: 100%;
+    font-weight: 700
+}
+
+.multiselect-container>li.multiselect-group-clickable label {
+    cursor: pointer
+}
+
+.multiselect-container>li>a {
+    padding: 0;
+    color: initial;
+}
+
+.multiselect-container>li>a>label {
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 0px 0px 3px 0px;
+}
+
+.multiselect-container>li>a>label.checkbox,
+.multiselect-container>li>a>label.radio {
+    margin: 0;
+}
+
+.multiselect-container>li>a>label>input[type=checkbox] {
+    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    top: -1px;
+    position: relative;
+}
+
+.btn-group>.btn-group:nth-child(2)>.multiselect.btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+
+.form-inline .multiselect-container label.checkbox,
+.form-inline .multiselect-container label.radio {
+    padding: 3px 20px 3px 40px
+}
+
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox],
+.form-inline .multiselect-container li a label.radio input[type=radio] {
+    margin-left: -20px;
+    margin-right: 0
+}
+
+/* Custom Checkboxes */
+
+.checkbox label:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.checkbox .cr {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #a9a9a9;
+  border-radius: .25em;
+  width: 1.3em;
+  height: 1.3em;
+  float: left;
+  margin-right: .5em;
+}
+
+.checkbox .cr .cr-icon {
+  position: absolute;
+  font-size: .8em;
+  line-height: 0;
+  top: 50%;
+  left: 15%;
+}
+
+.checkbox label input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label input[type="checkbox"]+.cr>.cr-icon {
+  opacity: 0;
+}
+
+.checkbox label input[type="checkbox"]:checked+.cr>.cr-icon {
+  opacity: 1;
+}
